@@ -5,6 +5,9 @@
  * author: Michał Białas <michal.bialas@mbialas.pl>
  */
 
+#include <stdlib.h>
+#include <string.h>
+
 #include "../crypt.h"
 #include "../util/util.h"
 
@@ -14,7 +17,8 @@
 #define DEBUG 0
 
 typedef struct _aes_ctx {
-	byte *key;
+	byte* key;
+	byte sub_key[178];
 } aes_ctx;
 
 aes_ctx* aes_create_ctx(byte *key);
