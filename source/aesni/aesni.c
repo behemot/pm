@@ -76,7 +76,6 @@ aesni_ctx* aesni_create_ctx(byte *key)
 	t1 = aesni_128_assist(t1, t2);
 	ctx->enc_keys[10] = t1;
 
-	byte buf[16];
 	ctx->dec_keys[0] = ctx->enc_keys[10];
 	for (int i = 1; i < 10; i++) {
 		ctx->dec_keys[i] =  _mm_aesimc_si128(ctx->enc_keys[10 - i]);

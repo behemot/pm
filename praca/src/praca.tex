@@ -1,0 +1,64 @@
+%
+% author: Michał Białas <michal.bialas@mbialas.pl>
+% since: 2012-05-03
+% title: Porównanie implementacji CPU i GPU dla wybranych algorytmów kryptograficznych
+%
+
+%\documentclass[11pt,a4paper,oneside,titlepage,openany]{book}
+\documentclass[sfheadings,a4paper,12pt,openany,oneside]{mwbk}
+
+\usepackage[utf8]{inputenc}
+\usepackage[english,polish]{babel}
+\usepackage{times}
+\usepackage{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[plmath]{polski}
+\usepackage{indentfirst}
+\usepackage{hyperref}
+
+\hypersetup{
+	bookmarks=true,
+	unicode=true,
+	pdftoolbar=true,
+	pdfmenubar=true,
+	pdffitwindow=false,
+	pdfstartview={FitH},
+	pdftitle={Porównanie implementacji CPU i GPU dla wybranych algorytmów kryptograficznych},
+	pdfauthor={Michał Białas},
+	pdfsubject={Porównanie implementacji CPU i GPU dla wybranych algorytmów kryptograficznych},
+	pdfcreator={Michał Białas},
+	pdfproducer={Michał Białas},
+	pdfkeywords={AES} {CUDA} {AES-NI},
+	pdfnewwindow=true,
+	colorlinks=false,
+	linkcolor=red
+}
+
+\frenchspacing
+\pagestyle{plain}
+\geometry{tmargin=2.5cm,bmargin=2.5cm,lmargin=3cm,rmargin=2cm}
+
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+
+\begin{document}
+	\include{stronatytulowa}
+	\blankpage
+	\setcounter{page}{1}
+	\tableofcontents
+	\include{wstep}
+	\include{rozdzial1}
+	\include{rozdzial2}
+	\include{rozdzial3}
+	\include{rozdzial4}
+	\include{rozdzial5}
+	\include{rozdzial6}
+	\include{bibliografia}
+	\listoftables
+        \appendix
+\end{document}
+
